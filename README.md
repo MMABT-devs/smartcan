@@ -1,6 +1,3 @@
-
-> Open this page at [https://mmabt-devs.github.io/smartcan/](https://mmabt-devs.github.io/smartcan/)
-
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
