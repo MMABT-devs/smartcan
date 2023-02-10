@@ -11,6 +11,13 @@ input.onSound(DetectedSound.Loud, function () {
         servos.P0.setPulse(800)
         servos.P0.setAngle(90)
         basic.pause(2000)
+        basic.showLeds(`
+            . . # . .
+            . # . . .
+            # # # # #
+            . # . . .
+            . . # . .
+            `)
         servos.P0.setAngle(0)
     }
 })
