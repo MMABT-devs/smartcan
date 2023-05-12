@@ -2,23 +2,15 @@ input.onSound(DetectedSound.Loud, function () {
     tong = !(tong)
     if (tong) {
         basic.showLeds(`
-            . . # . .
-            . . . # .
-            # # # # #
-            . . . # .
-            . . # . .
+            . . . . .
+            . . . . .
+            . # # # .
+            . . . . .
+            . . . . .
             `)
-        servos.P0.setPulse(800)
-        servos.P0.setAngle(90)
-        basic.pause(5000)
-        basic.showLeds(`
-            . . # . .
-            . # . . .
-            # # # # #
-            . # . . .
-            . . # . .
-            `)
-        servos.P0.setAngle(0)
+        edubitMotors.runMotor(MotorChannel.M1, MotorDirection.Forward, 20)
+    } else {
+        edubitMotors.brakeMotor(MotorChannel.M1)
     }
 })
 let tong = false
