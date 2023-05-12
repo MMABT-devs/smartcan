@@ -1,11 +1,12 @@
 {
-    "name": "SmartCan™",
+    "name": "SmartCan™ (dupe)",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "servo": "*"
+        "servo": "*",
+        "pxt-edubit": "github:cytrontechnologies/pxt-edubit#v1.14.0"
     },
     "files": [
         "main.blocks",
